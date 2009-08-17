@@ -1,0 +1,16 @@
+Source: mysociety-twfy
+Section: web
+Priority: optional
+Maintainer: Tom Parker <twfy@tevp.net>
+Build-Depends: debhelper (>= 5.0)
+Standards-Version: 3.7.2
+XS-Vcs-CVS: :pserver:anonymous@cvs.mysociety.org:/repos/mysociety/twfy
+
+Package: mysociety-twfy-dependencies
+Architecture: any
+Depends: ${mysociety-twfy-depends}
+Recommends: ${mysociety-twfy-recommends}
+Description: Dependencies for TheyWorkForYou 
+ This is a helper package providing all of the dependencies for a copy of
+ the TheyWorkForYou website. You will still need a copy of the website from
+ CVS, but this will ensure that all of the dependency packages are installed.
