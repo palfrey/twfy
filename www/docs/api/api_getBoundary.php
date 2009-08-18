@@ -1,6 +1,6 @@
 <?
 
-include_once '../../../../phplib/mapit.php';
+include_once PHPLIBPATH . '/mapit.php';
 include_once 'api_getGeometry.php';
 
 function api_getBoundary_front() {

@@ -4,7 +4,7 @@
 
 require_once '../../includes/easyparliament/init.php';
 require_once '../../includes/postcode.inc';
-require_once '../../../../phplib/auth.php';
+require_once PHPLIBPATH . '/auth.php';
 require_once "share.php";
 require_once "sharethis.php";
 

@@ -1,9 +1,9 @@
 <?php
 
 if (defined('OPTION_TRACKING') && OPTION_TRACKING)
-	require_once INCLUDESPATH . '../../../phplib/tracking.php';
+	require_once PHPLIBPATH . '/tracking.php';
 
-include_once INCLUDESPATH . '../../../phplib/gaze.php';
+include_once PHPLIBPATH . '/gaze.php';
 include_once INCLUDESPATH . 'easyparliament/member.php';
 
 class PAGE {

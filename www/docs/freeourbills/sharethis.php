@@ -1,6 +1,6 @@
 <?php
 
-require_once '../../../../phplib/sharethis.php';
+require_once PHPLIBPATH . '/sharethis.php';
 
 function freeourbills_share_details() {
     $name = ''; $email = '';
