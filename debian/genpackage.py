@@ -23,7 +23,7 @@ for f in datefiles:
 	if getmtime(f)>oldest:
 		oldest = getmtime(f)
 
-changes = Changelog(open("debian/changelog").read())
+changes = Changelog(open("debian/changelog.orig").read())
 changes._blocks[0].version = "0.cvs-%d"%int(oldest)
 changes._blocks[0].date = strftime("%a, %d %b %Y %H:%M:%S +0000", localtime(oldest))
 changes.write_to_open_file(open("debian/changelog","w"))
