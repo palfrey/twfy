@@ -5,6 +5,7 @@ from time import strftime, localtime
 depends = [x.strip() for x in open("conf/packages").readlines()]
 depends.append("perl (>=5.8.1)")
 depends.append("apache (>=1.3.28) | apache2 (>=2.2.12)") # FIXME: Should be 2.2.13, but not currently (2009-08-17) available in Debian
+depends.append("libapache2-mod-php5")
 depends.append("mysql-server (>=4.1)")
 
 recommends = ["php5-xapian"]
