@@ -2,7 +2,7 @@ Source: mysociety-twfy
 Section: web
 Priority: optional
 Maintainer: Tom Parker <twfy@tevp.net>
-Build-Depends: debhelper (>= 5.0)
+Build-Depends: debhelper (>= 5.0), python-debian
 Standards-Version: 3.7.2
 XS-Vcs-CVS: :pserver:anonymous@cvs.mysociety.org:/repos/mysociety/twfy
 
