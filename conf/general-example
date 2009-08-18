@@ -64,7 +64,7 @@ define ('PWMEMBERS', '/home/twfy/parlparse/members');
 define ("OPTION_MAIL_LOG_PREFIX", '/var/mail/twfy-');
 
 // File system path to where phplib lives (don't need to change if you've got a full checkout)
-define ("PHPLIBPATH", BASEDIR . "/../../../phplib");
+define ("PHPLIBPATH", BASEDIR . "/../../phplib");
 
 // *******************************************************************************
 // If you've unpacked the tar file normally, and set the paths correctly above, 

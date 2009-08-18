@@ -1,0 +1,3 @@
+[submodule "phplib"]
+	path = phplib
+	url = git://github.com/palfrey/phplib.git
