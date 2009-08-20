@@ -15,12 +15,12 @@ build:
 clean:
 	dh_testdir
 	dh_testroot
-	dh_clean 
+	dh_clean -Xchangelog
 
 install:
 	dh_testdir
 	dh_testroot
-	dh_clean -k 
+	dh_clean -Xchangelog
 	dh_install
 
 binary-indep: build install
