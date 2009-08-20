@@ -1,10 +1,5 @@
-Name: Planet Venus
-Maintainer: John Doe <jdoe@example.com>
-Source: http://www.example.com/code/venus
-
-Copyright: 2008, John Doe <jdoe@example.com>
-		   2007, Jane Smith <jsmith@example.org>
-		   2007, Joe Average <joe@example.org>
-		   2007, J. Random User <jr@users.example.com>
-License: PSF-2
-
+Files: *
+Copyright: 2009 Tom Parker <twfy@tevp.net>, UK Citizens Online Democracy
+License: GPL-2+
+  The full text of the GPL is distributed as in
+  /usr/share/common-licenses/GPL-2 on Debian systems.
