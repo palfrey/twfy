@@ -2,14 +2,17 @@ from debian_bundle.changelog import Changelog
 from os.path import getmtime
 from time import strftime, localtime
 
-depends = [x.strip() for x in open("conf/packages").readlines()]
-depends.append("perl (>=5.8.1)")
-depends.append("apache (>=1.3.28) | apache2 (>=2.2.12)") # FIXME: Should be 2.2.13, but not currently (2009-08-17) available in Debian
-depends.append("libapache2-mod-php5")
-depends.append("mysql-server (>=4.1)")
+def striphash(string):
+	if string.find("#")!=-1:
+		return string[:string.find("#")]
+	else:
+		return string
 
-recommends = ["php5-xapian"]
-depends.remove("php5-xapian")
+def pkglist(fname):
+	return [striphash(x.strip()) for x in open(fname).readlines()]
+
+depends = pkglist("conf/packages")
+recommends = pkglist("conf/packages-recommended")
 
 subst = open("debian/mysociety-twfy-dependencies.substvars","w")
 subst.write("mysociety-twfy-depends=%s\n"%(", ".join(depends)))
